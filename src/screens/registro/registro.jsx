@@ -1,10 +1,10 @@
-import { ScrollView, Text, TouchableOpacity, View } from "react-native";
+import { ScrollView, View } from "react-native";
 import { styles } from "./registro.style.js";
 import Header from "../../components/header/header.jsx";
 import TextBox from "../../components/textbox/textbox.jsx";
 import Button from "../../components/button/button.jsx";
 
-function Registro() {
+function Registro(props) {
   return (
     <>
       <View style={styles.container}>
@@ -37,16 +37,13 @@ function Registro() {
             </View>
 
             <View style={styles.form}>
-              <Button texto="Próximo passo" />
+              <Button
+                texto="Próximo passo"
+                onPress={() => props.navigation.navigate("registro2")}
+              />
             </View>
           </View>
         </ScrollView>
-      </View>
-
-      <View style={styles.footer}>
-        <TouchableOpacity>
-          <Text style={styles.footerText}>Acessar minha conta.</Text>
-        </TouchableOpacity>
       </View>
     </>
   );
