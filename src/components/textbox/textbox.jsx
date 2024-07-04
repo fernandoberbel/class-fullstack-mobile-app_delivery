@@ -9,6 +9,8 @@ function TextBox(props) {
         style={styles.input}
         placeholder={props.placeholder}
         secureTextEntry={props.isPassword}
+        onChangeText={(texto) => props.onChangeText(texto)}
+        value={props.value}
       />
     </>
   );
