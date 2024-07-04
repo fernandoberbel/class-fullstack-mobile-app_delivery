@@ -1,4 +1,4 @@
-import { ScrollView, Text, TouchableOpacity, View } from "react-native";
+import { ScrollView, View } from "react-native";
 import { styles } from "./registro2.style.js";
 import Header from "../../components/header/header.jsx";
 import TextBox from "../../components/textbox/textbox.jsx";
@@ -40,12 +40,6 @@ function Registro2() {
             </View>
           </View>
         </ScrollView>
-      </View>
-
-      <View style={styles.footer}>
-        <TouchableOpacity>
-          <Text style={styles.footerText}>Acessar minha conta.</Text>
-        </TouchableOpacity>
       </View>
     </>
   );
