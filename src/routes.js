@@ -4,10 +4,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import Login from "./screens/login/login.jsx";
 import Registro from "./screens/registro/registro.jsx";
 import Registro2 from "./screens/registro2/registro2.jsx";
-import Home from "./screens/home/home.jsx";
-import Favorite from "./screens/favorite/favorite.jsx";
-import Orders from "./screens/orders/orders.jsx";
-import Profile from "./screens/profile/profile.jsx";
+import Search from "./screens/search/search";
 
 const Stack = createNativeStackNavigator();
 
@@ -16,36 +13,13 @@ function Routes() {
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen
-          name="profile"
-          component={Profile}
+          name="search"
+          component={Search}
           options={{
-            title: "Meu Perfil",
+            title: "Resultados da busca",
             headerTitleAlign: "center",
             headerShadowVisible: false,
           }}
-        />
-        <Stack.Screen
-          name="orders"
-          component={Orders}
-          options={{
-            title: "Meus Pedidos",
-            headerTitleAlign: "center",
-            headerShadowVisible: false,
-          }}
-        />
-        <Stack.Screen
-          name="favorite"
-          component={Favorite}
-          options={{
-            title: "Favoritos",
-            headerTitleAlign: "center",
-            headerShadowVisible: false,
-          }}
-        />
-        <Stack.Screen
-          name="home"
-          component={Home}
-          options={{ headerShown: false }}
         />
         <Stack.Screen
           name="login"
