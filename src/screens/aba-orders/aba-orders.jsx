@@ -1,10 +1,10 @@
 import { FlatList, Image, Text, View } from "react-native";
-import { styles } from "./orders.style.js";
+import { styles } from "./aba-orders.style.js";
 import { pedidos } from "../../constants/data.js";
 import icons from "../../constants/icons.js";
 import Order from "../../components/order/order.jsx";
 
-function Orders() {
+function AbaOrders() {
   return (
     <View style={styles.container}>
       <FlatList
@@ -36,4 +36,4 @@ function Orders() {
   );
 }
 
-export default Orders;
+export default AbaOrders;

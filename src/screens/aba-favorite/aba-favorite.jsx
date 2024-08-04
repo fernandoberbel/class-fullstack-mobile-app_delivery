@@ -1,10 +1,10 @@
 import { FlatList, Image, Text, View } from "react-native";
-import { styles } from "./favorite.style.js";
+import { styles } from "./aba-favorite.style.js";
 import { restaurantes } from "../../constants/data.js";
 import Restaurant from "../../components/restaurant/restaurant.jsx";
 import icons from "../../constants/icons.js";
 
-function Favorite() {
+function AbaFavorite() {
   return (
     <View style={styles.container}>
       <FlatList
@@ -35,4 +35,4 @@ function Favorite() {
   );
 }
 
-export default Favorite;
+export default AbaFavorite;

@@ -1,8 +1,8 @@
 import { Image, Text, TouchableOpacity, View } from "react-native";
-import { styles } from "./profile.style.js";
+import { styles } from "./aba-profile.style.js";
 import icons from "../../constants/icons.js";
 
-function Profile() {
+function AbaProfile() {
   return (
     <View style={styles.container}>
       <TouchableOpacity style={[styles.item, styles.borderTop]}>
@@ -55,4 +55,4 @@ function Profile() {
   );
 }
 
-export default Profile;
+export default AbaProfile;
