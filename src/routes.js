@@ -4,7 +4,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import Login from "./screens/login/login.jsx";
 import Registro from "./screens/registro/registro.jsx";
 import Registro2 from "./screens/registro2/registro2.jsx";
-import Search from "./screens/search/search";
+
 
 const Stack = createNativeStackNavigator();
 
@@ -12,15 +12,6 @@ function Routes() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen
-          name="search"
-          component={Search}
-          options={{
-            title: "Resultados da busca",
-            headerTitleAlign: "center",
-            headerShadowVisible: false,
-          }}
-        />
         <Stack.Screen
           name="login"
           component={Login}
