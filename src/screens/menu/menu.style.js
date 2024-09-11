@@ -29,10 +29,6 @@ export const styles = {
     flexDirection: "row",
     padding: 10,
   },
-  favorito: {
-    height: 40,
-    width: 40,
-  },
   headerText: {
     flex: 1,
   },
