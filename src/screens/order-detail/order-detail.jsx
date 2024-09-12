@@ -1,19 +1,11 @@
-import { FlatList, Image, Text, TouchableOpacity, View } from "react-native";
+import { FlatList, Text, View } from "react-native";
 import { styles } from "./order-detail.style.js";
-import icons from "../../constants/icons.js";
 import { pedido } from "../../constants/data.js";
 import Product from "../../components/product/product.jsx";
 
-function OrderDetail() {
+function OrderDetail(props) {
   return (
     <View style={styles.container}>
-      <View style={styles.header}>
-        <TouchableOpacity style={styles.containerBack}>
-          <Image source={icons.back} style={styles.back} />
-        </TouchableOpacity>
-        <Text style={styles.title}>Detalhes do Pedido</Text>
-      </View>
-
       <FlatList
         data={pedido.itens}
         keyExtractor={(item) => item.idItem}
