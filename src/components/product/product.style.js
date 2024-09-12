@@ -29,4 +29,12 @@ export const styles = {
     fontSize: FONT_SIZE.sm,
     marginTop: 8,
   },
+  delete: {
+    height: 30,
+    width: 30,
+  },
+  containerDelete: {
+    alignItems: "flex-end",
+    marginTop: 8,
+  },
 };
