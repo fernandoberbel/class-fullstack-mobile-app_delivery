@@ -1,9 +1,12 @@
-import { Image, Text, View } from "react-native";
+import { Image, Text, TouchableOpacity, View } from "react-native";
 import { styles } from "./order.style.js";
 
 function Order(props) {
   return (
-    <View style={styles.orders}>
+    <TouchableOpacity
+      style={styles.orders}
+      onPress={() => props.onCLickPedido()}
+    >
       <Image source={props.logotipo} style={styles.logotipo} />
       <View style={styles.textos}>
         <Text style={styles.nome}>{props.nome}</Text>
@@ -20,7 +23,7 @@ function Order(props) {
 
         <Text style={styles.status}>{props.status}</Text>
       </View>
-    </View>
+    </TouchableOpacity>
   );
 }
 

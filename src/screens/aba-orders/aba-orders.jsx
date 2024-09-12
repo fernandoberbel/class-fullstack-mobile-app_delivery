@@ -4,7 +4,11 @@ import { pedidos } from "../../constants/data.js";
 import icons from "../../constants/icons.js";
 import Order from "../../components/order/order.jsx";
 
-function AbaOrders() {
+function AbaOrders(props) {
+  function DetalhePedido() {
+    props.navigation.navigate("order-detail");
+  }
+
   return (
     <View style={styles.container}>
       <FlatList
@@ -19,6 +23,7 @@ function AbaOrders() {
               valor={item.vl_total}
               data={item.dt_pedido}
               status={item.status}
+              onCLickPedido={DetalhePedido}
             />
           );
         }}
